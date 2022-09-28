@@ -1,0 +1,258 @@
+main{
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px lightgray;
+    display: grid;
+    background: linear-gradient(rgba(200,200,200,0.5),rgba(255,255,255,0.5)), url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.containerInicio{
+    margin-top:275px;
+    margin-bottom: 275px;   
+}
+
+.containerInicio button{  
+    padding: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 24px;
+    display: block;
+    border: 3px #8fbc8f solid;
+    background:#eeefe3;    
+}
+
+.containerInicio button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.btn-1{
+    width: 320px;
+    height: 115px;
+    margin: 0  auto 40px auto; 
+}
+
+.btn-2{
+    width: 280px;
+    height: 70px;
+    margin: 0 auto 0 auto;
+}
+
+.canvas{
+    width: 400px;
+    height:400px;
+    margin: 20px auto;  
+}
+
+.canvas canvas{
+    border-radius: 10px;
+    border:4px #69A68C solid;
+}
+
+#palabraAdivinar{
+    height: 2em;
+    margin: 20px auto;
+}
+
+#palabraAdivinar span{
+    vertical-align: bottom;
+    font-size: 2em;
+    border-bottom: 4px solid black;
+    width: 50px;
+    text-align: center;
+    margin-right: 6px;
+    margin-left: 6px;
+    display: inline-block;
+}
+
+#areaJuego p{
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+    text-shadow: 1px 1px #58c3bb;
+}
+
+#botonesLetras{
+    width: 380px;
+    margin: 10px auto;
+}
+
+#botonesLetras button{
+    width: 32px;
+    height: auto;
+    margin: 5px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1em;
+    border-radius: 5px;
+    padding: 5px;
+    border:1px #ffdb83 solid;
+    background: #eeefe3;
+    
+}
+
+#botonesLetras button:hover{
+    transform: scale(1.1);
+}
+
+
+#msjFinal{
+    font-size: 1.5em;
+}
+
+.botonesNavegacion1{
+    text-align: center;
+}
+
+.botonesNavegacion1 button{
+    width: 332px;
+    height: 50px;
+    margin: 40px 12px;
+    font-family:'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    border: 3px #8fbc8f solid;
+    background:#eeefe3;
+
+}
+
+.botonesNavegacion1 button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.cajaTexto{
+   width: 700px;
+   margin: 0 auto;
+}
+.ingresarTexto{
+    margin:30px 0 5px 0;
+    padding: 20px;
+    width: 700px;
+    height: 550px;
+    resize: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    border: 3px #005700 solid;
+    background:#eeefe3;
+    border-radius: 24px;
+   
+}
+
+.cajaTexto p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.botonesNavegacion2{
+    text-align: center;
+}
+
+.botonesNavegacion2 button{
+    width: 332px;
+    height: 50px;
+    margin: 40px 12px;
+    font-family:'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    border: 3px #8fbc8f solid;
+    background:#eeefe3;
+
+
+}
+.botonesNavegacion2 button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+
+}
+
+footer{
+    
+    padding: 5px 20px;
+    text-align: right;   
+    font-family: 'Raleway', sans-serif;
+}
+
+.datosPersonales{
+    display: inline-block;
+    margin: 5px 20px;
+    vertical-align: middle;
+}
+
+.datosPersonales p{
+    text-align: left;
+    margin: 5px;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+
+.logoDiego{
+    height: 85px;
+    margin: 5px 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logosRedes{
+    text-align: center;
+    margin:10px;
+}
+.logosRedes li{
+    display: inline;
+    
+}
+
+.logosRedes img{
+    width: 50px;
+}
+
+@media  screen and (max-width:480px){
+
+    #palabraAdivinar span{
+        vertical-align: bottom;
+        font-size: 1.5em;
+        border-bottom: 3px solid black;
+        width: 30px;
+        text-align: center;
+        margin-right: 3px;
+        margin-left: 3px;
+        display: inline-block;
+    }
+
+
+    .botonesNavegacion1 button{
+        display: block;
+        margin: 20px auto;
+    }
+
+    .cajaTexto{
+        width: 400px;
+        margin: 20px auto;
+    }
+
+    .cajaTexto p{
+        font-size: 0.8em;
+    }
+
+    .ingresarTexto{
+        width: 350px;
+        height: 200px;
+        margin: 20px auto;
+    }
+
+    .botonesNavegacion2 button{
+        display: block;
+        margin: 20px auto;
+    }
+}

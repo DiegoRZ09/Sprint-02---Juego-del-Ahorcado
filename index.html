@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Juego del Ahorcado</title>
+        <link rel="stylesheet" href="style/reset.css">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <main>
+            <!--Esta seccion es de los bloques de inicio-->
+            <section id="botonesInicio" class="containerInicio">
+                    <button class="btn-1"onclick="iniciarJuego()">Iniciar Juego</button>
+                    <button class="btn-2" onclick="mostrarPantallaNuevaPalabra()">Agregar nueva palabra</button>
+            </section>
+
+            <!--Esta seccion es del area de juego-->
+            <section id="areaJuego">
+                <div class="canvas">
+                    <canvas id="horca" width="400" height="400"></canvas>
+                </div>
+
+                <p id="palabraAdivinar"></p>
+                <p id="letrasIncorrectas"></p>
+
+                <div id="msjFinal"></div>
+                
+                <div id="botonesLetras"></div>
+                <div class="botonesNavegacion1">
+                    <button onclick="iniciarJuego()">Nuevo Juego</button>
+                    <button onclick="mostrarMenuPrincipal()">Salir</button>
+                </div>
+            </section>
+
+            <!--Esta seccion permite ingresar una nueva palabra secreta-->
+            <section id="ingresarPalabra">
+                <div class="cajaTexto">
+                    <textarea class="ingresarTexto" cols="40" rows="6" placeholder="Ingrese una nueva palabra aqui"></textarea>
+                    <p> ⚠️ No estan permitidos números ni caracteres especiales ⚠️</p>
+                </div>
+                <div class="botonesNavegacion2">
+                    <button onclick="agregarPalabra()">Guardar Palabra</button>
+                    <button onclick="agregarPalabra(), iniciarJuego()">Guardar y Comenzar</button>
+                    <button onclick="mostrarMenuPrincipal()">Cancelar</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <img class="logoDiego" src="img/logo-diego.png" alt="Logo del desarrollador">
+            <div class="datosPersonales">
+                <p>Desarrollado por Diego Reyes Zárate</p>
+                <p>Parte del programa ONE impartido por Alura</p>
+                <nav class="logosRedes">
+                    <ul>
+                        <li><a href="https://github.com/DiegoRZ09"><img src="img/gitgub-icono.png" alt="Icono Github"></a></li>
+                        <li><a href="https://www.linkedin.com/in/diego-rz/"><img src="img/linkedin-icono.png" alt="Icono LinkedIn"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer> 
+        <script src="ahorcado.js"></script>
+    </body>
+</html>
